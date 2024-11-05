@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Predictor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body class="container">
+    <h1 class="text-center my-4">Bangalore Housing Price Prediction</h1>
+    <form action="/" method="POST" class="form-group">
+        <div class="form-group">
+            <label>Location:</label>
+            <input type="text" class="form-control" name="location" required>
+        </div>
+        <div class="form-group">
+            <label>Square Footage:</label>
+            <input type="number" class="form-control" name="sqft" required>
+        </div>
+        <div class="form-group">
+            <label>Bath:</label>
+            <input type="number" class="form-control" name="bath" required>
+        </div>
+        <div class="form-group">
+            <label>BHK:</label>
+            <input type="number" class="form-control" name="bhk" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict Price</button>
+    </form>
+    {% if price %}
+    <h2 class="text-center my-4">Predicted Price: ₹{{ price }} Lakhs</h2>
+    {% endif %}
+</body>
+</html>
