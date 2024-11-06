@@ -1,36 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Housing Price Predictor</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rikkimy's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body class="container">
-    <h1 class="text-center my-4">Bangalore Housing Price Prediction</h1>
-    <form action="/" method="POST" class="form-group">
-        <div class="form-group">
-            <label>Location:</label>
-            <input type="text" class="form-control" name="location" required>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-folder"></i> <span>Projects</span></a></li>
+        <!-- <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li> -->
+        <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certificates</span></a></li> -->
+
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>R Govind</h1>
+      <p><span class="typed" data-typed-items="Data Analyst, Data Scientist, ML Engineer"></span></p>
+      <div class="social-links">
+        <a href="https://github.com/Rikkimy10" class="twitter"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/rikkimy/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/rikkimy/" class="medium"><i class="bi bi-medium"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <div class = "row">
+          <img src="assets/img/profile.png" style="width:20%;margin-left: 2%;">
+          <p class = "me" style="width:70%; margin-left: 0%; margin-top: 2%; text-align: justify;">I'm a data-driven professional with a background in Chemical Engineering from the National Institute of Technology, Warangal, and a keen interest in data science and analytics. With hands-on experience in machine learning, data visualization, and deep learning, I excel at transforming raw data into valuable insights. My technical skill set includes proficiency in Python, MySQL, Power BI, Excel, Tableau, and libraries like NumPy, Pandas, and TensorFlow.
+
+            Throughout my academic and professional journey, I've developed a diverse portfolio of projects. These range from predictive modeling for healthcare applications to personal finance dashboards and an innovative chatbot for food delivery. My work reflects a commitment to enhancing decision-making processes, whether for individuals, businesses, or communities. Additionally, my role as a co-founder of a food delivery startup demonstrates my entrepreneurial mindset and ability to lead initiatives from concept to execution.<br><br>I bring a blend of technical expertise and soft skills like adaptability, creative problem-solving, and effective communication to every project. I am passionate about using data to make a positive impact and am excited to leverage my skills in new and challenging environments.</p>
+            </div>  
+        </div>    
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 "style="font-family: Arial, Helvetica, sans-serif;"">Tools I Work with</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
-        <div class="form-group">
-            <label>Square Footage:</label>
-            <input type="number" class="form-control" name="sqft" required>
+
+        <div class="row">
+          <div class="col-lg-8 offset-lg-1 text-center"> <!-- Adjusted column width and added offset-lg-2 -->
+            <img src="assets/img/aoi2.jpg" alt="" style="height:160px;"> <!-- Removed display:block -->
+          </div>
         </div>
-        <div class="form-group">
-            <label>Bath:</label>
-            <input type="number" class="form-control" name="bath" required>
+
+      </div>
+    </section><!-- End Facts Section -->
+    
+<br>
+    
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Technical Stack</h2>
+          <p></p>
         </div>
-        <div class="form-group">
-            <label>BHK:</label>
-            <input type="number" class="form-control" name="bhk" required>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+            <div class="progress">
+              <span class="skill">R <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Tensorflow<i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Pandas<i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Numpy<i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Sci-kit Learn<i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
         </div>
-        <button type="submit" class="btn btn-primary">Predict Price</button>
-    </form>
-    {% if price %}
-    <h2 class="text-center my-4">Predicted Price: ₹{{ price }} Lakhs</h2>
-    {% endif %}
+
+      </div>
+    </section><!-- End Skills Section -->
+<br>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <picture>
+                <img src="assets/img/brain.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/Potato-Disease-Detection-Using-Deep-Learning">Deep learning Model</a></h4>
+              <p>Developed a potato leaf detection system focusing on leaf using deep learning techniques.</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/Potato-Disease-Detection-Using-Deep-Learning"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <picture>
+                <img src="assets/img/heart_cv.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/Machine-Learning-Model-for-Predicting-US-Patients-Heart-Attack">Heart Disease Detection</a></h4>
+              <p>Developed a machine learning Model for predicting heart attack for US patients.</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/Machine-Learning-Model-for-Predicting-US-Patients-Heart-Attack"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <picture>
+                <img src="assets/img/dialogflow.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/NLP-Powered-Food-Delivery-Chatbot">Food Delivery Chatbot</a></h4>
+              <p>Developed an NLP-powered chatbot using Dialogflow and FastAPI to streamline food ordering and tracking processes.</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/NLP-Powered-Food-Delivery-Chatbot"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <picture>
+                <img src="assets/img/HR_cv.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/HR-Analytics-Dashboard-in-Power-BI">HR Analytics</a></h4>
+              <p>Designed a Power BI HR Analytics Dashboard to visualize key metrics on attendance, WFH, and sick leave trends, supporting HR teams with actionable insights for policy and workforce engagement.</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/HR-Analytics-Dashboard-in-Power-BI"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top:22px;">
+            <div class="icon-box iconbox-blue">
+              <picture>
+                <img src="assets/img/LR.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/Machine-Learning-Model-and-Web-App-for-Housing-Price-Prediction-">Linear regression model</a></h4>
+              <p>Built a machine learning-powered web app using a linear regression model to predict housing prices, with data preprocessing, model optimization, and real-time predictions via a user-friendly interface using HTML, CSS, Bootstrap, and Flask.</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/Machine-Learning-Model-and-Web-App-for-Housing-Price-Prediction-"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top:22px;">
+            <div class="icon-box iconbox-blue">
+              <picture>
+                <img src="assets/img/finance_cv.jpg" class = "mciicon">
+              </picture> 
+              <h4><a href="https://github.com/Rikkimy10/Personal-Finance-Dashboard-Development-using-Power-BI">Finance Dashboard</a></h4>
+              <p>  Developed an interactive personal finance dashboard to track expenses, analyze spending patterns, and improve financial management</p>
+              <br>
+              <a href="https://github.com/Rikkimy10/Personal-Finance-Dashboard-Development-using-Power-BI"><i class="bx bx-rocket"></i>&nbsp;&nbsp;learn more</a>
+               
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-teal">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                </svg>
+                <i class="bx bx-arch"></i>
+              </div>
+              <h4><a href="">Divera Don</a></h4>
+              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+    <!-- ======= Portfolio Section ======= -->
+
+    <!-- End Portfolio Section -->
+    
+    
+
+    <!-- ======= Testimonials Section ======= -->
+
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div  data-aos="fade-up" style="margin-left: 0%; width: 100%;">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        
+
+        <div class="row" style="margin-left: 17%; width: 100%;">
+
+          <!-- <div class="col-lg-4" style="margin-left: 20%; width: 30%;"> -->
+            
+          <div style="width:15%;">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <!-- <p>rajag2001416@gmail.com</p> -->
+                <p>rikkimygovind@gmail.com</p>
+              </div>
+              </div>
+            </div>
+
+            <div style="width:15%; margin-left: 5%;">
+              <div class="info">
+                <div class="email">
+                  <i class="bi bi-github"></i>
+                  <h4>Github:</h4>
+                  <!-- <p>rajag2001416@gmail.com</p> -->
+                  <p>https://github.com/Rikkimy10/</p>
+                </div>
+                </div>
+              </div>
+
+
+              <div style="width:15%; margin-left: 0%;">
+                <div class="info">
+                  <div class="email">
+                    <i class="bi bi-linkedin"></i>
+                    <h4>Linkedin:</h4>
+                    <!-- <p>rajag2001416@gmail.com</p> -->
+                    <p>www.linkedin.com/in/rikkimy/</p>
+                  </div>
+                  </div>
+               
+                </div>
+
+
+
+            <div style="width:15%; margin-left:1%;">
+              <div class="info">
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9490284576</p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div style="width: 50%; margin-top: 5%; margin-left: 35%;">
+        <style>
+        .download-button {
+          display: inline-block;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          background-color: #1d66a6;
+          color: #ffffff;
+          border-radius: 4px;
+          border: none;
+          transition: background-color 0.3s ease;
+        }
+    
+        .download-button:hover {
+          background-color: #ffffff;
+        }
+      </style>
+      <h4 style="margin-left: 5%;">Download my Resume here</h4>
+      <br>
+
+      <a style="margin-left: 20%;" href="assets/img/Rikkimy_Govind_DataScientist.pdf" download class="download-button">Resume <i class="bx bx-download"></i></a>
+
+
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container" >
+      <h3>R Govind</h3>
+      <p>Data Scientist</p>
+      <!-- <div class="social-links"> -->
+        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+        <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-gmail"></i></a> -->
+        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      <!-- </div> -->
+      <div class="copyright">
+        &copy; Copyright <strong><span>R Govind</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
